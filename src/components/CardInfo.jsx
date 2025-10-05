@@ -19,7 +19,7 @@ export default function CardInfo() {
     return (
         <div className="card-info">
             <p>{ fact.fact }</p>
-            <button className="btn-info" onClick={fetchFact} onKeyUp={(event) => {event.key === 'Enter' ? fetchFact : console.log("erro")}}>Nova Informação</button>
+            <button className="btn-info" onClick={fetchFact} onKeyUp={(event) => {event.key === 'Enter' ? fetchFact : console.log("erro")}}>New Information</button>
         </div>
     )
 }
