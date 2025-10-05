@@ -1,16 +1,24 @@
-# React + Vite
+# 🐱 Cat Facts — React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um pequeno projeto em **React.js** criado para treinar o consumo de APIs públicas e o uso dos hooks **useState** e **useEffect**.  
+O app exibe fatos aleatórios sobre gatos utilizando a API [CatFact Ninja](https://catfact.ninja/fact).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias utilizadas
+- **React.js**
+- **JavaScript (ES6+)**
+- **Fetch API**
+- **HTML / CSS**
+- **CatFact Ninja API**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📘 O que o projeto faz
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ao ser carregado, o componente `CardInfo`:
+1. Faz uma requisição para `https://catfact.ninja/fact`;
+2. Recebe um objeto JSON contendo um fato aleatório sobre gatos;
+3. Exibe esse fato na tela;
+4. Permite gerar um novo fato clicando no botão **"New Information"** ou pressionando **Enter**.
+   
